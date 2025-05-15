@@ -15,14 +15,14 @@ const SideMenu = ({ activeMenu }) => {
 
   const handleClick = (route) => {
     if (route === "logout") {
-      handelLogout();
+      handleLogout();
       return;
     }
 
     navigate(route);
   };
 
-  const handelLogout = () => {
+  const handleLogout = () => {
     localStorage.clear();
     clearUser();
     navigate("/login");
